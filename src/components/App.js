@@ -1,7 +1,7 @@
 import React from 'react';
 import { withStyles } from 'react-jss';
 import { connect } from "react-redux";
-
+// import { withRouter } from 'react-router-dom'
 const styles = {
   myButton: {
     color: 'green',
@@ -39,4 +39,4 @@ class App extends React.Component {
 const mapStateToProps = state => {
   return { articles: state.articles };
 };
-export default connect(mapStateToProps)(withStyles(styles)(App));
+export default connect(mapStateToProps)(withStyles(styles)(App)) ;

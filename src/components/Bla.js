@@ -1,13 +1,13 @@
 import React from 'react';
 // import { withRouter } from 'react-router-dom'
 
-class Test extends React.Component {
+class Bla extends React.Component {
 
   render() {
     return(
-      <div>TEST</div>
+      <div>Bla</div>
     );
   }
 }
 
-export default Test;
+export default Bla;
