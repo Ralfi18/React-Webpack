@@ -21,7 +21,6 @@ const styles = {
   }
 };
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +30,9 @@ class App extends React.Component {
     const { classes } = this.props;
 
     return(
-      <div className={classes.myButton}>App Class <span>Span</span></div>
+      <div className={classes.myButton}>
+        App Class <span>Span</span>
+      </div>
     );
   }
 }
