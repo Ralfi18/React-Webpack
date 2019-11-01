@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from 'react-jss';
+import { connect } from "react-redux";
 
 const styles = {
   myButton: {
@@ -35,5 +36,7 @@ class App extends React.Component {
     );
   }
 }
-
-export default withStyles(styles)(App);
+const mapStateToProps = state => {
+  return { articles: state.articles };
+};
+export default connect(mapStateToProps)(withStyles(styles)(App));

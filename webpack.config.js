@@ -27,7 +27,7 @@ module.exports = {
   devServer: {
     open: true,
     hot: true,
+     historyApiFallback: true,
     contentBase: path.join(__dirname, 'public')
   }
 };
-
